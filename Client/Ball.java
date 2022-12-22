@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 import javax.swing.*;
 
-public class Ball implements Serializable{
+public class Ball implements Serializable {
 
     float x;
     float y;

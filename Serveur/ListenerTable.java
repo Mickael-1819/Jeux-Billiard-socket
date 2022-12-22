@@ -1,5 +1,15 @@
 package listeners;
 
+import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+import java.net.*;
+
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -8,11 +18,40 @@ import materials.*;
 public class ListenerTable implements MouseListener {
     Table table;
     Ball b;
-    boolean turn=false;
+//     boolean turn=false;
+//     String fin = "fin";
+    
+//     ServerSocket ser;
+   
+//   Socket sock;
 
+//     BufferedReader in;
+    
+//     PrintWriter  out;
+   
+
+ 
     public ListenerTable(Table table){
         setTable(table);
         setB(table.getB());
+    //     try{
+    // ServerSocket ser = new ServerSocket(9090);
+   
+    // Socket sock = ser.accept();
+  
+    //   BufferedReader in = new BufferedReader(new InputStreamReader(sock.getInputStream()));
+      
+    //   PrintWriter  out = new PrintWriter(sock.getOutputStream());
+        
+    //     } catch (Exception e) {
+    //      e.printStackTrace();
+    //      try {
+    //         sock.close();
+            
+    //      } catch (Exception ex) {
+    //      ex.printStackTrace();   
+    //     }
+    //     }
     }
     public void mouseClicked(MouseEvent e) {
 
@@ -33,6 +72,14 @@ public class ListenerTable implements MouseListener {
             table.setNbClick(table.getNbClick()+1);
 			table.repaint();
 	    	}
+            // if (sock!=null) {
+            //     out.println(fin);
+            //     out.flush();   
+    
+            // }
+                
+    
+             
         }
     
 

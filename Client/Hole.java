@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
 import java.io.Serializable;
 
-public class Hole implements Serializable {
+public class Hole implements Serializable{
     int diameter;
     float x;
     float y;

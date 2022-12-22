@@ -24,7 +24,15 @@ public class Table extends JPanel implements Serializable{
     double distance;
     int nbClick;
     String[] namePlayers = new String[2];
+    boolean mandray = true;
 
+    public boolean getMandray() {
+        return mandray;
+    }
+
+    public void setMandray(boolean mandray) {
+        this.mandray = mandray;
+    }
 
     public int getNbClick() {
         return nbClick;

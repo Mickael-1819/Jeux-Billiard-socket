@@ -59,13 +59,6 @@ public class Main {
             envoyer.start(); 
 
             Thread recevoir = new Thread(new Runnable() {
-                //String msg;
-                
-//                Fonction f = new Fonction();
-                
-                // if(relationObjIs == null) {
-                //     relationObjIs = new ObjectInputStream(is);
-                // }
 
                 @Override
                 public void run() {
@@ -100,9 +93,8 @@ public class Main {
                         String vivis4 = input.readUTF();
                         String vivis5 = input.readUTF();
                         String vivis6 = input.readUTF();
-                        
-                        // System.out.println(hu);
-                         String[] first = hu.split(":");    
+
+                        String[] first = hu.split(":");    
                        String X=first[0];
                         String Y=first[1];
 
@@ -159,9 +151,6 @@ public class Main {
                                  String[] vs6 = vivis6.split(":");    
                                  String vXs6=vs6[0];
                                   String vYs6=vs6[1];
-                        // Vector<String> XcoordBalls =new Vector<String>();
-                        // XcoordBalls.add(BX);
-                        // XcoordBalls.add(BY); 
 
 
                          game.getTable().getB().setX(Float.parseFloat(X));
@@ -202,64 +191,7 @@ public class Main {
                         
 
 
-
-                    //     game.getTable().getB().setY(Y);
-                    //         game.getTable().repaint();
-                    //    // Table tab = (Table)hu;
-                       // game.setTable(tab);
-                     //   new Thread(new ThreadR()).start();
-                  
-                    //  DataOutputStream mpSent = new DataOutputStream(os); // pour l'envoie de l'objet
-                    
-                    //  String cood =game.getTable().getB().getX()+":"+game.getTable().getB().getY();
-                    // // System.out.println(cood);
-                    //  String vitesse =game.getTable().getB().getxSpeed()+":"+game.getTable().getB().getySpeed();    
-       
-                    //  mpSent.writeUTF(cood);
-                    //  mpSent.writeUTF(vitesse);
- 
-                    //      String ballscord1 =game.getTable().getBalls()[0].getX()+":"+game.getTable().getBalls()[0].getY();
-                    //      String ballscord2 =game.getTable().getBalls()[1].getX()+":"+game.getTable().getBalls()[1].getY();
-                    //      String ballscord3 =game.getTable().getBalls()[2].getX()+":"+game.getTable().getBalls()[2].getY();
-                    //      String ballscord4 =game.getTable().getBalls()[3].getX()+":"+game.getTable().getBalls()[3].getY();
-                    //      String ballscord5 =game.getTable().getBalls()[4].getX()+":"+game.getTable().getBalls()[4].getY();
-                    //      String ballscord6 =game.getTable().getBalls()[5].getX()+":"+game.getTable().getBalls()[5].getY();
-                    //      // System.out.println(ballscord1);
-                    //      // System.out.println(ballscord2);
-                    //      // System.out.println(ballscord3);
-                    //      // System.out.println(ballscord4);
-                    //      // System.out.println(ballscord5);
-                    //      // System.out.println(ballscord6);
-                         
-                    //      mpSent.writeUTF(ballscord1);
-                    //      mpSent.writeUTF(ballscord2);
-                    //      mpSent.writeUTF(ballscord3);
-                    //      mpSent.writeUTF(ballscord4);
-                    //      mpSent.writeUTF(ballscord5);
-                    //      mpSent.writeUTF(ballscord6);
-                                    
- 
-                    //       String vitballs1 = game.getTable().getBalls()[0].getxSpeed()+":"+game.getTable().getBalls()[0].getySpeed();
-                    //       String vitballs2 = game.getTable().getBalls()[1].getxSpeed()+":"+game.getTable().getBalls()[1].getySpeed();
-                    //       String vitballs3 = game.getTable().getBalls()[2].getxSpeed()+":"+game.getTable().getBalls()[2].getySpeed();
-                    //       String vitballs4 = game.getTable().getBalls()[3].getxSpeed()+":"+game.getTable().getBalls()[3].getySpeed();
-                    //       String vitballs5 = game.getTable().getBalls()[4].getxSpeed()+":"+game.getTable().getBalls()[4].getySpeed();
-                    //       String vitballs6 = game.getTable().getBalls()[5].getxSpeed()+":"+game.getTable().getBalls()[5].getySpeed();
-                                         
-                    //                  mpSent.writeUTF(vitballs1);
-                    //                  mpSent.writeUTF(vitballs2);
-                    //                  mpSent.writeUTF(vitballs3);
-                    //                  mpSent.writeUTF(vitballs4);
-                    //                  mpSent.writeUTF(vitballs5);
-                    //                  mpSent.writeUTF(vitballs6);
-                    //  //  //               System.out.println(ballscord);
-                    
- 
- 
-                         
-               
-                    //      mpSent.flush();
-                     
+      
                     
                     }
                       
@@ -268,12 +200,6 @@ public class Main {
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
-                    // try {                                                             ;,,,,,,,,,,,,hjmhj;;;;;;;;;;;h
-                    //     System.out.println("Serveur deconnecté");
-                    //     out.close();
-                    // } catch (IOException e) {
-                    //     e.printStackTrace();
-                    // }
                     
 
                 }

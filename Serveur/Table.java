@@ -24,7 +24,23 @@ public class Table extends JPanel implements Serializable {
     double distance;
     int nbClick;
     String[] namePlayers = new String[2];
+    boolean mandefa = true;
+    String fin ="fin";
+    public String getFin() {
+        return fin;
+    }
 
+    public void setFin(String fin) {
+        this.fin = fin;
+    }
+
+    public boolean getMandefa() {
+        return mandefa;
+    }
+
+    public void setMandefa(boolean mandefa) {
+        this.mandefa = mandefa;
+    }
 
     public int getNbClick() {
         return nbClick;
